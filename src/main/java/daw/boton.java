@@ -45,6 +45,7 @@ public class boton extends JPanel  implements ActionListener{
 
         // Creamos el textArea de una fila por 25 columnas
         textoNombre = new JTextArea(1, 25);
+        textoApellidos = new JTextArea(1, 25);
      
 
         // Establecemos el color de fondo del textArea
@@ -57,6 +58,7 @@ public class boton extends JPanel  implements ActionListener{
         this.add(botonNombre);
         this.add(textoNombre);
         this.add(botonApellidos);
+        this.add(textoApellidos);
       
 
         botonNombre.addActionListener(this);
@@ -77,8 +79,8 @@ public class boton extends JPanel  implements ActionListener{
                 if((ae.getSource()==botonNombre)){
                     textoNombre.setText("Daniel");
                 }
-    		if((ae.getSource()==botonNombre)){
-                    texto.setText("Daniel");
+    		if((ae.getSource()==botonApellidos)){
+                    textoApellidos.setText("Navarro");
                 }
                 
                 
