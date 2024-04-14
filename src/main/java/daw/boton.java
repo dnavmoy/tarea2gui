@@ -4,12 +4,15 @@
  */
 package daw;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.GridBagLayout;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
@@ -49,10 +52,11 @@ public class boton extends JPanel  implements ActionListener{
      
 
         // Establecemos el color de fondo del textArea
-        textoNombre.setBackground(Color.cyan);
+        textoNombre.setBackground(Color.lightGray);
+        textoApellidos.setBackground(Color.lightGray);
         
         // Posicionamiento de componentes con FlowLayout
-        this.setLayout(new FlowLayout());
+        this.setLayout(new GridLayout(2, 2));
 
         // Añadimos los componentes al panel
         this.add(botonNombre);
@@ -78,9 +82,11 @@ public class boton extends JPanel  implements ActionListener{
 
                 if((ae.getSource()==botonNombre)){
                     textoNombre.setText("Daniel");
+                    textoNombre.setBackground(Color.WHITE);
                 }
     		if((ae.getSource()==botonApellidos)){
                     textoApellidos.setText("Navarro");
+                    textoApellidos.setBackground(Color.green);
                 }
                 
                 

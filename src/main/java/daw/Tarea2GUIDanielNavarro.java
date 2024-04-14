@@ -22,7 +22,6 @@ public class Tarea2GUIDanielNavarro {
 	// Posición de la ventana
     	frame.setLocationRelativeTo(null);
 	// Incluimos el panel en la ventana         	       
-        frame.add(new BotonApellido());
         frame.add(new boton());
        // Ajusta el frame al contenido
         frame.pack();
